@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8" /> 
+        <title>Canvas Recording Application</title>
+        <link rel="stylesheet" href="recorder.css" />
+       
+    </head>
+
+    <body>
+        
+        <canvas id="canvas" width="400" height="300"></canvas> 
+        <header>
+                <h1>Canvas Drawing Recorder</h1> <h2 onclick = "instructions()">Click me for Instructions</h2>
+            </header>
+        <fieldset>
+            <legend>Color Options</legend>
+            <input type = button value = "Red" id = "Red" onclick = "changeRed()"/>
+             <input type = button value = "Green" id = "Green" onclick = "changeGreen()"/> 
+            <input type = button value = "Blue" id = "Blue" onclick = "changeBlue()" /> 
+            <input type = button value = "Yellow" id = "Yellow" onclick = "changeYellow()" /> 
+        </fieldset> <br>
+        <fieldset>
+            <legend>Recorder Options</legend>
+            <input type = button value = "Start" id = "Start" onclick = "startRec()"/> 
+            <input type = button value = "Stop" id = "Stop" onclick = "stopRec()" />
+            <input type = button value = "Play" id = "Play" onclick = "play()"/> 
+            <input type = button value = "Save" id = "Save" onclick = "save()" />
+            <input type = button value = "Retrieve Saved" id = "retrieve" onclick = "retrieve()" />
+            <input type = reset value = "Clear Canvas" id = "Clear" onclick = "clearCanvas()" />
+        </fieldset> 
+        
+        <script src="recorder.js"></script>
+    </body>
+</html>
